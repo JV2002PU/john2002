@@ -1,0 +1,174 @@
+#include <iostream>
+#include <string>
+#include <vector>
+
+using namespace std;
+
+class Secretary;
+
+class person{
+
+string Name;
+string Surname;
+string BirthDate; 
+string PhoneNumber;  
+static int  count;                                                                      
+
+public:
+    person(){
+    }
+    person(string name,string surname){
+        Name=name;
+        Surname=surname;
+        BirthDate="unknown";
+        PhoneNumber="unknown"; 
+        count++;
+    }
+
+friend istream& readSecretary(istream& input, Secretary& s);
+friend Secretary& operator+(Secretary& secretary ,person& newMember)  ; 
+friend std::istream& readperson(std::istream& input, person& p );
+friend ostream& operator <<(ostream& output, person& p);
+friend ostream& viewlist(ostream& output,Secretary& s);
+    ~person(){                                    
+    }
+
+    void getcount(){                             
+    cout << "count" << count<< endl;
+}
+
+};
+
+int person::count = 0;
+
+std::istream& readperson(std::istream& input, person& p ){
+    cout << "Enter birthday: ";
+    input >> p.BirthDate;
+    cout << "Enter PhoneNumber: ";
+    input >> p.PhoneNumber;
+
+    return input;
+
+}
+
+ostream& operator <<(ostream& output, person& p){
+    cout << "Name:";
+    output << p.Name;
+     cout << endl<<  "Surname:";
+    output << p.Surname;
+     cout << endl<<"Birthdate:";
+    output << p.BirthDate;
+     cout << endl<<"Phonenumber:";
+    output << p.PhoneNumber;
+    cout<<endl;
+
+    return output;
+}
+
+
+class Secretary{                                                                                  // υπερφορτωση τελεστη αναθεσης= ευρεση συγκεκριμενου person(?)
+    vector <person*> department;                                                                 //gpt         department=lista
+
+public:
+friend std::istream& readSecretary(std::istream& input, Secretary& s);
+friend Secretary& operator+(Secretary& secretary,person* newMember);
+friend ostream& viewlist(ostream& output,Secretary& s) ;
+
+    Secretary(vector<person*>& newdepartment){                                                  //constructor
+        department=newdepartment;
+    }
+
+
+    Secretary(Secretary& original){                                                             //copy constructor
+        for (const person* p : original.department) {
+            department.push_back(new person(*p));
+        }
+    }
+
+    ~Secretary() {
+        for (person* p : department) {
+        delete p;
+        }                                                                      // destructor-deallocation of memory
+    }   
+
+    void addMember(person* newMember) {
+        department.push_back(newMember);
+    }
+
+    Secretary& operator=(Secretary& rhs){                             //OVERLOAD =
+     if(this!= &rhs){
+        department = rhs.department;
+     }
+    return *this;
+    }
+};
+
+istream& readSecretary(istream& input, Secretary& s){                             //OVERLOAD CIN
+        person tempP;
+        cout << "Enter Name: ";
+        input >> tempP.Name;
+        cout << "Enter Surname: ";
+        input >> tempP.Surname;
+
+         bool exists = false;
+        for(person* p :s.department){
+            if (tempP.Name == p->Name && tempP.Surname == p->Surname) {
+            exists = true;
+            break;
+            }
+        }
+        if (exists==true) {
+        cout << "Person with the same Name and Surname exists."<<endl;
+        }
+        else{
+            cout<<"person doesnt exist"<<endl;
+        }
+    return input;
+}
+
+ostream& viewlist(ostream& output,Secretary& s){             //OVERLOAD SECRETARY COUT
+    output<< "students and teachers in department:";
+    for(person* p :s.department){
+        output<<p->Name<<"    "<<p->Surname<<endl;
+    }
+    return output;
+}
+
+
+Secretary& operator+(Secretary& secretary,person* newMember) {                                          //OVERLOAD + {allaxa apo perso& se person* isos buggarei}
+    secretary.addMember(newMember);                                                                       
+    
+    
+    return secretary;
+}
+                
+
+
+
+int main() {
+    vector<person*> list1,list2,list3;
+    
+    Secretary di1(list1);
+    Secretary di2(list2);
+    Secretary di3(list3);
+
+    person p("John", "Doe");
+    person p1("nikos","papas");
+    person p2("dimitris","gkikas");
+    readperson(cin,p1);
+    cout<<p1;
+    
+    di2 = di1 + &p;
+    cout << "Department Contents:\n";
+    viewlist(cout, di2);
+
+    di3 = di2 + &p1 +&p2;
+    cout << "Department Contents:\n";
+    viewlist(cout, di3);
+
+    readSecretary(cin,di3);
+    readSecretary(cin,di3);
+    
+    getcount();
+    return 0;
+}

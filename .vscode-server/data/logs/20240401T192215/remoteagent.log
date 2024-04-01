@@ -1,0 +1,20 @@
+2024-04-01 19:22:15.994 [info] 
+
+
+
+
+2024-04-01 19:22:16.006 [info] Extension host agent started.
+2024-04-01 19:22:16.070 [info] Deleted uninstalled extension from disk ms-vscode-remote.remote-ssh /home/john2002/.vscode-server/extensions/ms-vscode-remote.remote-ssh-0.107.1
+2024-04-01 19:22:16.204 [info] [127.0.0.1][6838add3][ManagementConnection] New connection established.
+2024-04-01 19:22:16.548 [info] [127.0.0.1][e224a4d4][ExtensionHostConnection] New connection established.
+2024-04-01 19:22:16.586 [info] [127.0.0.1][e224a4d4][ExtensionHostConnection] <123> Launched Extension Host Process.
+2024-04-01 19:22:43.799 [info] [127.0.0.1][1c86b735][ManagementConnection] New connection established.
+2024-04-01 19:22:44.175 [info] [127.0.0.1][bf6050c8][ExtensionHostConnection] New connection established.
+2024-04-01 19:22:44.211 [info] [127.0.0.1][bf6050c8][ExtensionHostConnection] <210> Launched Extension Host Process.
+2024-04-01 19:22:49.510 [info] [127.0.0.1][1c86b735][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2024-04-01 19:22:49.513 [info] [127.0.0.1][bf6050c8][ExtensionHostConnection] <210> Extension Host Process exited with code: 0, signal: null.
+2024-04-01 19:22:50.682 [info] [127.0.0.1][6838add3][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2024-04-01 19:22:50.704 [info] [127.0.0.1][e224a4d4][ExtensionHostConnection] <123> Extension Host Process exited with code: 0, signal: null.
+2024-04-01 19:22:52.075 [info] [127.0.0.1][7e39c266][ManagementConnection] New connection established.
+2024-04-01 19:22:52.404 [info] [127.0.0.1][02e0d93a][ExtensionHostConnection] New connection established.
+2024-04-01 19:22:52.430 [info] [127.0.0.1][02e0d93a][ExtensionHostConnection] <288> Launched Extension Host Process.

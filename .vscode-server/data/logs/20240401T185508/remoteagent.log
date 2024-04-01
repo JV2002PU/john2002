@@ -1,0 +1,13 @@
+2024-04-01 18:55:09.004 [info] 
+
+
+
+
+2024-04-01 18:55:09.015 [info] Extension host agent started.
+2024-04-01 18:55:09.084 [info] Deleted uninstalled extension from disk ms-vscode.remote-explorer /home/john2002/.vscode-server/extensions/ms-vscode.remote-explorer-0.4.1
+2024-04-01 18:55:09.085 [info] Deleted uninstalled extension from disk ms-vscode-remote.remote-wsl /home/john2002/.vscode-server/extensions/ms-vscode-remote.remote-wsl-0.81.9
+2024-04-01 18:55:09.237 [info] [127.0.0.1][e25de7c0][ManagementConnection] New connection established.
+2024-04-01 18:55:09.645 [info] [127.0.0.1][5f2846f8][ExtensionHostConnection] New connection established.
+2024-04-01 18:55:09.673 [info] [127.0.0.1][5f2846f8][ExtensionHostConnection] <5091> Launched Extension Host Process.
+2024-04-01 18:56:02.165 [info] [127.0.0.1][e25de7c0][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2024-04-01 18:56:02.228 [info] [127.0.0.1][5f2846f8][ExtensionHostConnection] <5091> Extension Host Process exited with code: 0, signal: null.

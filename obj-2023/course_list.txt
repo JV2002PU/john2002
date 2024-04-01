@@ -1,0 +1,12 @@
+Principles 1 60 1 0 
+Programming 2 70 1 1 
+Security 3 60 1 1 
+Basics 4 40 2 0 
+Industrial 5 90 2 1 
+Networks 6 80 2 1 
+Introduction 7 30 3 0 
+Techniques 8 90 3 1 
+Systems 9 90 3 1 
+Security 10 50 4  1
+Basics2 11 50 4 1 
+Programming 12 50 4 1 

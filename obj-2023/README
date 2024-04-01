@@ -1,0 +1,11 @@
+Panagiotis Anastasopoylos sdi1900010
+Giannis valasidis sdi2000016
+oi oroi course-mathima,student-mathitis,professor-kathigitis exoun xrisimoipoiithei  os antistoixoi
+sxolia exoun paraliuthei se diadikasies pou epanalambanontai para polles fores
+sta txt arxeia oi plirofories xorizontai me whitespace kai sugkekrimna
+Sto student_list:name surname am birthdate phonenumber current semester eligible ectssum
+Sto Professor_list:name surname key birthdate phonenumber
+sto course_list: name code ects  semester type;
+theoroume tha eprepe ta cout na beltiothoun ligo akoma oste na enimeronoun kalutera to xristi gia to  ti sumbainei sto programma
+parola auta nomizoume pos kaluptontai oles oi apaithseis tis ergasias me monadiki exairesi oti ola ginontai meso tis grammatias dhladh enas kathigitis dn mporei o idios na kataxorisei bathmo alla to kanei i grammatia gia auton
+auto sunaibei gia na apofugoume circular dependency pou ipirxe ena apo ta provlimata p antimetopisame

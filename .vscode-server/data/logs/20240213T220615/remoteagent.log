@@ -1,0 +1,51 @@
+2024-02-13 22:06:15.221 [info] 
+
+
+
+
+2024-02-13 22:06:15.254 [info] Extension host agent started.
+2024-02-13 22:06:15.507 [info] [127.0.0.1][1d312fd8][ManagementConnection] New connection established.
+2024-02-13 22:06:15.604 [info] [127.0.0.1][5951aecc][ExtensionHostConnection] New connection established.
+2024-02-13 22:06:16.070 [info] [127.0.0.1][5951aecc][ExtensionHostConnection] <145> Launched Extension Host Process.
+2024-02-13 22:06:19.549 [info] Getting Manifest... ms-vscode-remote.remote-ssh
+2024-02-13 22:06:19.550 [info] Getting Manifest... ms-vscode-remote.remote-wsl
+2024-02-13 22:06:19.803 [info] Installing extension: ms-vscode-remote.remote-wsl
+2024-02-13 22:06:19.817 [info] Installing extension: ms-vscode-remote.remote-ssh
+2024-02-13 22:06:22.547 [warning] Extension signature verification failed with error 'ENOENT': ms-vscode-remote.remote-wsl
+2024-02-13 22:06:22.743 [warning] Extension signature verification failed with error 'ENOENT': ms-vscode-remote.remote-ssh
+2024-02-13 22:06:22.800 [info] Extracted extension to file:///home/john2002/.vscode-server/extensions/ms-vscode-remote.remote-wsl-0.86.0: ms-vscode-remote.remote-wsl
+2024-02-13 22:06:22.834 [info] Rename failed because of EACCES: permission denied, rename '/home/john2002/.vscode-server/extensions/.64c5756b-bb3c-4cb5-8464-2e93de9e75f5' -> '/home/john2002/.vscode-server/extensions/ms-vscode-remote.remote-wsl-0.86.0'. Deleted from extracted location {"$mid":1,"fsPath":"/home/john2002/.vscode-server/extensions/.64c5756b-bb3c-4cb5-8464-2e93de9e75f5","path":"/home/john2002/.vscode-server/extensions/.64c5756b-bb3c-4cb5-8464-2e93de9e75f5","scheme":"file"}
+2024-02-13 22:06:22.868 [error] Error while installing the extension ms-vscode-remote.remote-wsl EACCES: permission denied, rename '/home/john2002/.vscode-server/extensions/.64c5756b-bb3c-4cb5-8464-2e93de9e75f5' -> '/home/john2002/.vscode-server/extensions/ms-vscode-remote.remote-wsl-0.86.0'
+2024-02-13 22:06:22.869 [error] Failed to install extension. ms-vscode-remote.remote-wsl
+2024-02-13 22:06:22.869 [error] EACCES: EACCES: permission denied, rename '/home/john2002/.vscode-server/extensions/.64c5756b-bb3c-4cb5-8464-2e93de9e75f5' -> '/home/john2002/.vscode-server/extensions/ms-vscode-remote.remote-wsl-0.86.0'
+    at V.C (/home/john2002/.vscode-server/bin/31c37ee8f63491495ac49e43b8544550fbae4533/out/vs/server/node/server.main.js:169:77287)
+    at async V.extractUserExtension (/home/john2002/.vscode-server/bin/31c37ee8f63491495ac49e43b8544550fbae4533/out/vs/server/node/server.main.js:169:74800)
+    at async re.u (/home/john2002/.vscode-server/bin/31c37ee8f63491495ac49e43b8544550fbae4533/out/vs/server/node/server.main.js:169:80893)
+    at async re.x (/home/john2002/.vscode-server/bin/31c37ee8f63491495ac49e43b8544550fbae4533/out/vs/server/node/server.main.js:169:82808)
+    at async re.h (/home/john2002/.vscode-server/bin/31c37ee8f63491495ac49e43b8544550fbae4533/out/vs/server/node/server.main.js:169:80426)
+2024-02-13 22:06:22.897 [info] Extracted extension to file:///home/john2002/.vscode-server/extensions/ms-vscode-remote.remote-ssh-0.108.0: ms-vscode-remote.remote-ssh
+2024-02-13 22:06:22.904 [info] Rename failed because of EACCES: permission denied, rename '/home/john2002/.vscode-server/extensions/.d97b84b2-387b-4df2-b529-54fade846af9' -> '/home/john2002/.vscode-server/extensions/ms-vscode-remote.remote-ssh-0.108.0'. Deleted from extracted location {"$mid":1,"fsPath":"/home/john2002/.vscode-server/extensions/.d97b84b2-387b-4df2-b529-54fade846af9","path":"/home/john2002/.vscode-server/extensions/.d97b84b2-387b-4df2-b529-54fade846af9","scheme":"file"}
+2024-02-13 22:06:22.931 [error] Error while installing the extension ms-vscode-remote.remote-ssh EACCES: permission denied, rename '/home/john2002/.vscode-server/extensions/.d97b84b2-387b-4df2-b529-54fade846af9' -> '/home/john2002/.vscode-server/extensions/ms-vscode-remote.remote-ssh-0.108.0'
+2024-02-13 22:06:22.931 [error] Failed to install extension. ms-vscode-remote.remote-ssh
+2024-02-13 22:06:22.932 [error] EACCES: EACCES: permission denied, rename '/home/john2002/.vscode-server/extensions/.d97b84b2-387b-4df2-b529-54fade846af9' -> '/home/john2002/.vscode-server/extensions/ms-vscode-remote.remote-ssh-0.108.0'
+    at V.C (/home/john2002/.vscode-server/bin/31c37ee8f63491495ac49e43b8544550fbae4533/out/vs/server/node/server.main.js:169:77287)
+    at async V.extractUserExtension (/home/john2002/.vscode-server/bin/31c37ee8f63491495ac49e43b8544550fbae4533/out/vs/server/node/server.main.js:169:74800)
+    at async re.u (/home/john2002/.vscode-server/bin/31c37ee8f63491495ac49e43b8544550fbae4533/out/vs/server/node/server.main.js:169:80893)
+    at async re.x (/home/john2002/.vscode-server/bin/31c37ee8f63491495ac49e43b8544550fbae4533/out/vs/server/node/server.main.js:169:82808)
+    at async re.h (/home/john2002/.vscode-server/bin/31c37ee8f63491495ac49e43b8544550fbae4533/out/vs/server/node/server.main.js:169:80426)
+2024-02-13 22:06:23.871 [error] EACCES: EACCES: permission denied, rename '/home/john2002/.vscode-server/extensions/.64c5756b-bb3c-4cb5-8464-2e93de9e75f5' -> '/home/john2002/.vscode-server/extensions/ms-vscode-remote.remote-wsl-0.86.0'
+    at V.C (/home/john2002/.vscode-server/bin/31c37ee8f63491495ac49e43b8544550fbae4533/out/vs/server/node/server.main.js:169:77287)
+    at async V.extractUserExtension (/home/john2002/.vscode-server/bin/31c37ee8f63491495ac49e43b8544550fbae4533/out/vs/server/node/server.main.js:169:74800)
+    at async re.u (/home/john2002/.vscode-server/bin/31c37ee8f63491495ac49e43b8544550fbae4533/out/vs/server/node/server.main.js:169:80893)
+    at async re.x (/home/john2002/.vscode-server/bin/31c37ee8f63491495ac49e43b8544550fbae4533/out/vs/server/node/server.main.js:169:82808)
+    at async re.h (/home/john2002/.vscode-server/bin/31c37ee8f63491495ac49e43b8544550fbae4533/out/vs/server/node/server.main.js:169:80426)
+2024-02-13 22:06:23.932 [error] EACCES: EACCES: permission denied, rename '/home/john2002/.vscode-server/extensions/.d97b84b2-387b-4df2-b529-54fade846af9' -> '/home/john2002/.vscode-server/extensions/ms-vscode-remote.remote-ssh-0.108.0'
+    at V.C (/home/john2002/.vscode-server/bin/31c37ee8f63491495ac49e43b8544550fbae4533/out/vs/server/node/server.main.js:169:77287)
+    at async V.extractUserExtension (/home/john2002/.vscode-server/bin/31c37ee8f63491495ac49e43b8544550fbae4533/out/vs/server/node/server.main.js:169:74800)
+    at async re.u (/home/john2002/.vscode-server/bin/31c37ee8f63491495ac49e43b8544550fbae4533/out/vs/server/node/server.main.js:169:80893)
+    at async re.x (/home/john2002/.vscode-server/bin/31c37ee8f63491495ac49e43b8544550fbae4533/out/vs/server/node/server.main.js:169:82808)
+    at async re.h (/home/john2002/.vscode-server/bin/31c37ee8f63491495ac49e43b8544550fbae4533/out/vs/server/node/server.main.js:169:80426)
+2024-02-14 12:08:21.682 [info] [127.0.0.1][5951aecc][ExtensionHostConnection] The client has reconnected.
+2024-02-14 12:08:22.141 [info] [127.0.0.1][1d312fd8][ManagementConnection] The client has reconnected.
+2024-02-14 13:39:42.033 [info] [127.0.0.1][1d312fd8][ManagementConnection] The client has reconnected.
+2024-02-14 13:39:42.117 [info] [127.0.0.1][5951aecc][ExtensionHostConnection] The client has reconnected.
